@@ -1,0 +1,6 @@
+"Address_ID","Student_ID","Address1","Address2","City","State","Zipcode"
+1,1,"123 E Apple St","Apt 123","Phoenix","AZ",85008
+2,2,"123 W Waddell Rd","","Waddell","AZ",85000
+3,3,"1000 E Whitlock St","","Chandler","AZ",85045
+4,4,"1 E 1st St","Apt 500","Scottsdale","AZ",88888
+5,5,"1000 E Whitlock St","","Chandler","AZ",85045
