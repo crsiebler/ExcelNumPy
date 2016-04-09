@@ -4,6 +4,9 @@ import numpy as np
 from openpyxl import load_workbook
 
 def writeToCsv(file, data):
+	'''
+	Append to a file using the CSV writing format
+	'''
 	with open(file, 'ab') as file:
 		writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_NONNUMERIC)
 		writer.writerow(data)
@@ -55,7 +58,7 @@ def main():
 	'''
 	Load the Excel workbook into a numpy 2D array
 	Array is in [rows, columns] format
-	Remove the previous csv file
+	Utilizes OpenPyxl v2.2.5
 	'''
 	wb = load_workbook(filename='roster.xlsx', read_only=True, data_only=True)
 	ws = wb['Student']
