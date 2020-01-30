@@ -24,6 +24,7 @@ def write_to_csv(file: str, data: list):
 		)
 		writer.writerow(data)
 
+
 def parse_table(a, x1 = None, y1 = None, x2 = None, y2 = None):
 	"""
 	Remove the csv corresponding to the table if it exists.  Write the header 
@@ -45,6 +46,7 @@ def parse_table(a, x1 = None, y1 = None, x2 = None, y2 = None):
 	
 	for row in a[y1:y2,x1:x2]:
 		write_to_csv(csv_file, row)
+
 
 def parse_worksheet(a):
 	"""
@@ -75,6 +77,7 @@ def parse_worksheet(a):
 		elif value == 'ET':
 			x2 = idx
 			parse_table(a, x1, y1, x2, y2)
+
 
 def start():
 	"""
